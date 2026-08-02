@@ -47,7 +47,7 @@ class Account{
 		this.interstrate=k;
 	}
 		void calculateintrest() {
-			double intrest = balance * interstrate / 100;
+			double intrest = balance * (interstrate / 100);
 			balance = balance + intrest;
 			System.out.println("value :"+intrest);
 		}

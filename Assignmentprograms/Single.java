@@ -1,11 +1,11 @@
 package inheritance;
-class Ones{
+class One{
 	int  x=27;
 	 void show() {
 		 System.out.println("this is one");	
 	 }
 }
-class Twos extends Ones {
+class Two extends One {
 	 int y= 34;
 	 void see () {
 		 System.out.println("see :"+super.x+ " "+this.y);
@@ -13,7 +13,7 @@ class Twos extends Ones {
 }
 public class Single {
 public static void main(String[] args) {
-	Twos t = new Twos();
+	Two t = new Two();
 	t.see();
 	t.show();
 }

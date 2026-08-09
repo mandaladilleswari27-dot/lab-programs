@@ -12,7 +12,7 @@ class Result extends Addition{
     }
 
 } 
-public class Singleinher {
+public class Singleinheritance {
 public static void main(String[] args) {
     Result r= new Result();
     r.display();

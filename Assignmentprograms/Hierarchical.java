@@ -1,17 +1,17 @@
 package inheritance;
-class one{
+class add{
 	int  x=27;
 	 void show() {
 		 System.out.println("this is one");	
 	 }
  }
- class two extends one {
+ class sub extends add {
 	 int y= 34;
 	 void see () {
 		 System.out.println("see :"+super.x+ " "+this.y);
 	 }
  }
-class three extends one{
+class smart extends add{
  int z=12;
  void demo(){
 	 System.out.println("see :"+super.x+ " "+this.z);
@@ -19,9 +19,9 @@ class three extends one{
 }
 public class Hierarchical {
 public static void main(String[] args) {
-	two w = new two();
-	three r = new three();
-	w.see();
-	r.demo();
+	sub u = new sub();
+	smart s = new three();
+	u.see();
+	s.demo();
 }
 }

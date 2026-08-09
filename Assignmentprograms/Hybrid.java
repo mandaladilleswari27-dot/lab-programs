@@ -1,23 +1,23 @@
 package inheritance;
-class Cls1{
+class p1{
 	int  x=27;
 	 void show() {
 		 System.out.println("this is one");	
 	 }
  }
- class Cls2 extends Cls1 {
+ class p2 extends p1 {
 	 int y= 34;
 	 void see () {
 		 System.out.println("see :"+super.x+ " "+this.y);
 	 }
  }
-// class Cls3 extends Cls2{
+// class p3 extends p2{
 //	 int z=12;
 //	 void demo() {
 //		 System.out.println("see :"+super.x+ " "+super.y+ " "+this.z);
 //	 }
 // }
- class Cls3 extends Cls1{
+ class p3 extends p1{
 	 int z=12;
 	 void demo() {
 		 System.out.println("see :"+super.x+ " "+this.z);
@@ -25,7 +25,7 @@ class Cls1{
  }
 public class Hybrid {
 public static void main(String[] args) {
-	Cls3 c = new Cls3();
-	c.demo();
+	p3 p = new p3();
+	p.demo();
 }
 }

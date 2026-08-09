@@ -1,12 +1,12 @@
 package inheritance;
-class C1{
-	int  x=27;
+class add{
+	int x=50;
 	 void show() {
 		 System.out.println("this is one");	
 	 }
  }
  class C2 extends C1 {
-	 int y= 34;
+	 int y=30;
 	 void see () {
 		 System.out.println("see :"+super.x+ " "+this.y);
 	 }
@@ -16,10 +16,13 @@ class C1{
 	 void demo() {
 		 System.out.println("see :"+super.x+ " "+super.y+ " "+this.z);
 	 }
+	 void addition (){
+		 System.out.println("addition :" +(x+y+z));
  }
 public class Multilevel {
 public static void main(String[] args) {
 	C3 T=new C3();
 	T.demo();
+	T.addition();
 }
 }

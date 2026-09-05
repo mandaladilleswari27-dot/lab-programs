@@ -1,3 +1,4 @@
+package exceptions;
 class Student{
     String name;
 }
